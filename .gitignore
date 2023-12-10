@@ -1,2 +1,4 @@
 .env
 .env.local
+# secrets.yaml
+home-assistant_v2.db

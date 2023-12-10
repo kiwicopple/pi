@@ -1,6 +1,7 @@
 version: "3"
 
 services:
+  # PiHole
   pihole:
     container_name: pihole
     image: pihole/pihole:latest
@@ -19,3 +20,17 @@ services:
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
+
+  #  Home Assistant
+  home:
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    volumes:
+      - ./home-assistant:/config
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+    environment:
+      TZ: ${PI_TZ}
+    ports:
+      - "8123:8123"
