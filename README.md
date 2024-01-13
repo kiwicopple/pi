@@ -31,3 +31,7 @@ Make sure you have docker-compose installed on your Pi (`sudo apt-get install -y
 - pihole admin: http://localhost/admin.
   - Password: [in your .env file]
 - home assistant: http://localhost:8123
+
+### Scripts
+
+Follow the docs in `./docs` to get started with associated scripts
