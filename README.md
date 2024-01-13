@@ -14,7 +14,18 @@ Home setup
  
 ## Usage
 
+### Prereqs
+
 Make sure you have docker-compose installed on your Pi (`sudo apt-get install -y docker-compose`). You might need to give elevated access then restart your Pi (`sudo usermod -aG docker $USER`)
+
+### Start services
 
 - `cp .env.example .env` - change all values
 - `docker-compose up -d` 
+
+### Access services
+
+- pihole admin: http://localhost/admin.
+  - Password: [in your .env file]
+- home assistant: http://localhost:8123
+
