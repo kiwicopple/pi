@@ -34,17 +34,4 @@ services:
     ports:
       - "8123:8123"
 
-  # Backups
-  duplicati:
-    image: duplicati/duplicati
-    container_name: duplicati
-    environment:
-      - PUID=1000  # Replace with your user ID
-      - PGID=1000  # Replace with your group ID
-    volumes:
-      - /home/copple/:/source:ro  # Local folders to back up
-      - /home/copple/config/duplicati:/config  # Where Duplicati stores configuration
-    ports:
-      - "8200:8200"  # Duplicati web UI port
-    restart: unless-stopped
 
