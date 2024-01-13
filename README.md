@@ -5,6 +5,7 @@ Home setup
 - [`supabase`](https://supabase.com) - running as a local instance
 - [`pihole`](https://pi-hole.net/) - ad blocker
 - [`home-assistant`](https://www.home-assistant.io) - manage your home
+- [`duplicati`](https://github.com/duplicati/duplicati) - manage backups
 
 
 ## To dogfood
@@ -28,4 +29,4 @@ Make sure you have docker-compose installed on your Pi (`sudo apt-get install -y
 - pihole admin: http://localhost/admin.
   - Password: [in your .env file]
 - home assistant: http://localhost:8123
-
+- Duplicati (Backups): http://localhost:8200
