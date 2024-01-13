@@ -31,14 +31,14 @@ Setting up Rclone on your Raspberry Pi to sync with Dropbox for Business involve
    - Write a script to sync your desired folder to Dropbox. For example:
      ```bash
      #!/bin/bash
-     rclone sync /home/copple dropboxbusiness:/pi/wanaka
+     rclone sync /home/copple dropboxbusiness:pi/wanaka
      ```
    - Replace `/home/copple` with the directory you want to back up and `/path/to/backup/folder` with the path in your Dropbox where you want the backup stored.
 
 5. **Make Script Executable**:
    - Make your script executable:
      ```bash
-     chmod +x /path/to/your/script.sh
+     chmod +x rclone.sh
      ```
 
 6. **Schedule Regular Backups**:
